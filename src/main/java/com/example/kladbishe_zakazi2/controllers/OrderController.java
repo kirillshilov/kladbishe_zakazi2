@@ -1,7 +1,7 @@
-package com.example.kladbishe_zakazi.controllers;
+package com.example.kladbishe_zakazi2.controllers;
 
-import com.example.kladbishe_zakazi.model.Order;
-import com.example.kladbishe_zakazi.services.OrderService;
+import com.example.kladbishe_zakazi2.model.Order;
+import com.example.kladbishe_zakazi2.services.OrderService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +11,7 @@ import java.util.Collection;
 
 
 @RestController
-@RequestMapping("Orders")
+@RequestMapping("orders")
 public class OrderController {
     private final OrderService orderService;
 
@@ -32,7 +32,7 @@ public class OrderController {
 
     @PostMapping("/add")
     public ResponseEntity addOrder(@RequestBody Order order) {
-        return ResponseEntity.ok(orderService.addOrder());
+        return ResponseEntity.ok(orderService.addOrder(order));
     }
 
     @PutMapping("/change")

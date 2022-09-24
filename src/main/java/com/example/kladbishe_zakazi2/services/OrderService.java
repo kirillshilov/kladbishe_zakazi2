@@ -1,7 +1,7 @@
-package com.example.kladbishe_zakazi.services;
+package com.example.kladbishe_zakazi2.services;
 
-import com.example.kladbishe_zakazi.model.Order;
-import com.example.kladbishe_zakazi.repositories.OrderRepository;
+import com.example.kladbishe_zakazi2.model.Order;
+import com.example.kladbishe_zakazi2.repositories.OrderRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -20,9 +20,8 @@ public class OrderService {
         return orderRepository.findAll();
     }
 
-    public Order addOrder() {
-        Order o = null;
-        return o;
+    public Order addOrder(Order order) {
+        return orderRepository.save(order);
     }
 
     public Object changeOrder() {

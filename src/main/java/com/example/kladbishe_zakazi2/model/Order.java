@@ -1,10 +1,10 @@
-package com.example.kladbishe_zakazi.model;
+package com.example.kladbishe_zakazi2.model;
 
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-
+@Table (name = "orders")
 public class Order {
     @Id
     @GeneratedValue
