@@ -18,7 +18,7 @@ public class Order {
 
     private String telephoneNumber;
 
-    private String ListOfWorks;
+    private String listOfWorks;
 
     private Integer sum;
 
@@ -64,11 +64,11 @@ public class Order {
     }
 
     public String getListOfWorks() {
-        return ListOfWorks;
+        return listOfWorks;
     }
 
     public void setListOfWorks(String listOfWorks) {
-        ListOfWorks = listOfWorks;
+        this.listOfWorks = listOfWorks;
     }
 
     public Integer getSum() {
@@ -100,7 +100,7 @@ public class Order {
                 ", nameOfCustomer='" + nameOfCustomer + '\'' +
                 ", nameOfDeadMan='" + nameOfDeadMan + '\'' +
                 ", telephoneNumber='" + telephoneNumber + '\'' +
-                ", ListOfWorks='" + ListOfWorks + '\'' +
+                ", ListOfWorks='" + listOfWorks + '\'' +
                 ", sum=" + sum +
                 '}';
     }
